@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+}
+
+.clash {
+    font-size: 28px;
+}
+
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    color: orange;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    line-height: 3px;
+}
+
