@@ -10,13 +10,28 @@
 <body>
     @section('navbar')
     <div class="logo">
-       <p class="clash">CLASH</p> <br> 
+        <p class="clash">CLASH</p> <br>
         of CLANS
     </div>
     @show
     @yield('content')
+    <div class="content">
+        <div class="dots">
+            <i class="dot"></i>
+            <i class="dot ON"></i>
+            <i class="dot"></i>
+            <i class="dot"></i>
+        </div>
 
+        <div class="info">
+            <div class="description">
 
+            </div>
+            <div class="stats">
+                
+            </div>
+            <a href="/" class="more">MORE DETAILS</a>
+        </div>
     </div>
 </body>
 
