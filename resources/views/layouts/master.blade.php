@@ -11,12 +11,14 @@
 <body>
     @section('navbar')
     <div class="logo">
+        <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=pl&gl=US">
         <p class="clash">CLASH</p> <br>
-        of CLANS
+        of CLANS</a>
     </div>
     @show
-    @yield('content')
-    <div class="content">
+
+    @section('content-left')
+<div class="content-left">
         <div class="dots">
             <i class="dot"></i>
             <i class="dot ON"></i>
@@ -54,6 +56,11 @@
             </div>
             <a href="/" class="more">MORE DETAILS</a>
         </div>
+    </div>
+    @show
+    <div class="content-right">
+    @yield('content')
+
     </div>
 </body>
 

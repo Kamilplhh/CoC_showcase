@@ -20,6 +20,15 @@ body::-webkit-scrollbar {
     line-height: 3px;
 }
 
+.logo a {
+    color: orange;
+}
+
+.logo a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
 .content {
     height: auto;
     width: 50vw;
@@ -29,8 +38,8 @@ body::-webkit-scrollbar {
     position: absolute;
     height: 70vh;
     width: 2vw;
-    padding-left: 6vw;
-    padding-top: 15vh;
+    padding-left: 2vw;
+    padding-top: 30vh;
 }
 
 .dot {
@@ -57,6 +66,11 @@ body::-webkit-scrollbar {
 
 .ON:hover {
     background-color: orange;
+}
+
+.content-left {
+    width: 50vw;
+    float: left;
 }
 
 .info {
