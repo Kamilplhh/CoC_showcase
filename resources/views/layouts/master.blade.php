@@ -12,13 +12,14 @@
     @section('navbar')
     <div class="logo">
         <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=pl&gl=US">
-        <p class="clash">CLASH</p> <br>
-        of CLANS</a>
+            <p class="clash">CLASH</p> <br>
+            of CLANS
+        </a>
     </div>
     @show
 
     @section('content-left')
-<div class="content-left">
+    <div class="content-left">
         <div class="dots">
             <i class="dot"></i>
             <i class="dot ON"></i>
@@ -36,22 +37,26 @@
                 </div>
             </div>
             <div class="stats row">
-                <div class="stat col-4">
-                    <i class="fa-solid fa-shield"></i>
-                    Defense 15
-                </div>
-                <div class="stat col-4">
-                    <i class="fa-solid fa-dagger"></i>
-                    <img src="icons/attack.jpg" class="attack"/>
-                    Attack Speed 21
-                </div>
-                <div class="stat col-4">
+                <div class="stat col-6">
                     <i class="fa-solid fa-crosshairs"></i>
-                    Preffered Target 12
+                    Preffered Target: Walls
                 </div>
-                <div class="stat col-4">
+                <div class="stat col-6">
+                    <i class="fa-solid fa-house-flood-water"></i>
+                    Housing Space: 6
+                </div>
+                <div class="stat col-6">
+                    <i class="fa-solid fa-person-running"></i>
+                    Movement speed: 15
+                </div>
+                <div class="stat col-6">
+                    <i class="fa-solid fa-dagger"></i>
+                    <img src="icons/attack.jpg" class="attack" />
+                    Attack Speed: 21
+                </div>
+                <div class="stat col-6">
                     <i class="fa-solid fa-clock"></i>
-                    Training Time 9
+                    Training Time: 1m
                 </div>
             </div>
             <a href="/" class="more">MORE DETAILS</a>
@@ -59,7 +64,7 @@
     </div>
     @show
     <div class="content-right">
-    @yield('content')
+        @yield('content')
 
     </div>
 </body>
