@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/js/app.js')
 </head>
 
@@ -60,8 +61,9 @@
                     Training Time: 1m
                 </div>
             </div>
+        </div>
+        <div class="details">
             <a href="/" class="more">MORE DETAILS</a>
-
         </div>
     </div>
     @show

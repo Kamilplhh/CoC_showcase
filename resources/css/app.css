@@ -125,10 +125,13 @@ body::-webkit-scrollbar {
     height: 20px;
 }
 
+.details {
+    margin-left: 20vh;
+    margin-top: 7vh;
+}
+
 .more {
     font-family: 'Russo One', sans-serif;
-    position: absolute;
-    bottom: 18vh;
     cursor: pointer;
     background-color: orange;
     color: black;
@@ -144,4 +147,32 @@ body::-webkit-scrollbar {
     border: 1px solid white;
     color: black;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .content-left {
+        width: 60vw !important;
+    }
+    .dot {
+        height: 8px;
+        width: 8px;
+    }
+    .details {
+        margin-left: 2vh;
+        position: absolute;
+        bottom: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 11px;
+    }
+    .info {
+        width: 55vw;
+        height: 70vh;
+    }
+    .info-bg {
+        display: none;
+    }
 }

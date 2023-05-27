@@ -1,6 +1,7 @@
 .content-right {
     width: 50vw;
     float: right;
+    height: 100%;
 }
 
 .carousel {
@@ -24,7 +25,7 @@
     background-color: rgb(241, 17, 17);
 }
 
-#back {
+.back {
     filter: grayscale(0.8);
 }
 
@@ -36,7 +37,7 @@
 }
 
 .buttons {
-    padding-top: 5vh;
+    margin-top: 5vh;
     width: auto;
     height: auto;
     display: flex;
@@ -60,5 +61,40 @@
 .behind {
     position: absolute;
     visibility: hidden;
+    
+}
+
+#one {
     left: -40%;
+}
+
+#two {
+    right: 80%;
+}
+
+@media only screen and (max-width: 500px) {
+    .buttons{
+        position: absolute;
+        bottom: 0;
+        padding-left: 10%;
+    }
+    .button {
+        padding: 14px 8px 14px 8px;
+    }
+    .content-right {
+        width: 40vw !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .back{
+        visibility: hidden;
+        position: absolute;
+    }
+    .content-right {
+        width: 35vw;
+    }
+    .portrait {
+        width: 90%;
+    }
 }
