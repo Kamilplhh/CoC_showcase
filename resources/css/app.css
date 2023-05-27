@@ -71,6 +71,7 @@ body::-webkit-scrollbar {
 .content-left {
     width: 50vw;
     float: left;
+    height: 100%;
 }
 
 .info {
@@ -80,6 +81,17 @@ body::-webkit-scrollbar {
     margin-top: 15vh;
     color: white;
     font-family: 'Exo 2', sans-serif;
+}
+
+.info-bg {
+    left: 10vw;
+    top: 15vh;
+    position: absolute;
+    width: 40vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(1);
 }
 
 .description {

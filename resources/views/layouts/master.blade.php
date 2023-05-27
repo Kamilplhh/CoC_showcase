@@ -20,6 +20,7 @@
 
     @section('content-left')
     <div class="content-left">
+        <div class="info-bg" style="background-image: url('image/pekka.png');"></div>
         <div class="dots">
             <i class="dot"></i>
             <i class="dot ON"></i>
@@ -30,10 +31,10 @@
         <div class="info">
             <div class="description">
                 <center>
-                    <h1>Hogrider</h1>
+                    <h1>P.E.K.K.A</h1>
                 </center>
                 <div class="dsc">
-                    Description
+                    P.E.K.K.A is a big unit unlocked in the standard Barracks when it is upgraded to level 10 which requires Town Hall level 8. She is a slow single-target melee Elixir Troop that occupies a big amount of housing space but comes with large amounts of hitpoints and damage.
                 </div>
             </div>
             <div class="stats row">
@@ -51,7 +52,7 @@
                 </div>
                 <div class="stat col-6">
                     <i class="fa-solid fa-dagger"></i>
-                    <img src="icons/attack.jpg" class="attack" />
+                    <img src="icons/attack.png" class="attack" />
                     Attack Speed: 21
                 </div>
                 <div class="stat col-6">
@@ -60,6 +61,7 @@
                 </div>
             </div>
             <a href="/" class="more">MORE DETAILS</a>
+
         </div>
     </div>
     @show

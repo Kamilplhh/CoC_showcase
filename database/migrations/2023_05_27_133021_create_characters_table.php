@@ -17,7 +17,7 @@ return new class extends Migration
             $table->bigInteger('stat_id');
             $table->string('src');
             $table->text('description');
-            $table->integer('price');
+            $table->string('bg');
             $table->timestamps();
         });
     }
