@@ -84,6 +84,9 @@
     .content-right {
         width: 40vw !important;
     }
+    .portrait {
+        height: 50%;
+    }
 }
 
 @media only screen and (max-width: 800px) {
