@@ -11,7 +11,7 @@
 <body>
     @section('navbar')
     <div class="logo">
-        <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=pl&gl=US">
+        <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=pl&gl=US" target="_blank">
             <p class="clash">CLASH</p> <br>
             of CLANS
         </a>
@@ -22,10 +22,10 @@
     <div class="content-left">
         <div class="info-bg" style="background-image: url('image/pekka.png');"></div>
         <div class="dots">
-            <i class="dot"></i>
-            <i class="dot ON"></i>
-            <i class="dot"></i>
-            <i class="dot"></i>
+            <i class="dot" id="1"></i>
+            <i class="dot ON" id="2"></i>
+            <i class="dot" id="3"></i>
+            <i class="dot" id="4"></i>
         </div>
 
         <div class="info">

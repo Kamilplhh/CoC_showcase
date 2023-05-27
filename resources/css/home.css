@@ -24,7 +24,7 @@
     background-color: rgb(241, 17, 17);
 }
 
-.back {
+#back {
     filter: grayscale(0.8);
 }
 
@@ -55,4 +55,10 @@
 
 .button:hover {
     transform: scale(1.4);
+}
+
+.behind {
+    position: absolute;
+    visibility: hidden;
+    left: -40%;
 }
