@@ -92,7 +92,13 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
     background-position: center;
     filter: grayscale(1);
+    animation: fadeIn 2s; 
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 .description {
     width: 100%;

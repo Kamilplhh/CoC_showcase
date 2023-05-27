@@ -12,4 +12,12 @@
         <img src="image/barbarian.png" class="character" />
     </div>
 </div>
+<div class="buttons">
+    <div class="button" id="prev">
+    <i class="fa-solid fa-angles-left fa-xl fa-beat"></i>
+    </div>
+    <div class="button" id="next">
+    <i class="fa-solid fa-angles-right fa-xl fa-beat"></i>
+    </div>
+</div>
 @stop
