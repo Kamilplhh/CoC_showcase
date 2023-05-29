@@ -6,8 +6,9 @@ const dots = document.querySelectorAll('.dot');
 const prev = document.querySelector('#prev');
 const next = document.querySelector('#next');
 
+let x = 2;
+
 prev.addEventListener('click', function() {
-    
     let portrait = document.querySelectorAll('.portrait');
     console.log(portrait);
     portrait.forEach(portrait => {
@@ -36,10 +37,17 @@ prev.addEventListener('click', function() {
             portrait.classList.toggle("back");
         }
     });
+
+    x = x - 1;
+    if(x==0){
+        x = 4;
+    };
+
+    document.getElementsByClassName('selected').remove.classList('selected');
+    document.getElementById(x).toggleAttribute.classList('selected');
 });
 
 next.addEventListener('click', function() {
-    
     let portrait = document.querySelectorAll('.portrait');
     portrait.forEach(portrait => {
         portrait.id = ++portrait.id;
@@ -67,4 +75,12 @@ next.addEventListener('click', function() {
             portrait.classList.remove("back");
         }
     });
-})
+
+    x = ++x;
+    if(x==5){
+        x = 1;
+    };
+
+    document.getElementsByClassName('selected').remove.classList('selected');
+    document.getElementById(x).toggleAttribute.classList('selected');
+});
