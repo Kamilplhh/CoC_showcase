@@ -26,7 +26,14 @@
 }
 
 .back {
+    position: absolute;
+    left: 45%;
     filter: grayscale(0.8);
+}
+
+.main {
+    position: absolute;
+    left: 0%;
 }
 
 .character {
@@ -61,15 +68,14 @@
 .behind {
     position: absolute;
     visibility: hidden;
-    
 }
 
-#one {
+.one {
     left: -40%;
 }
 
-#two {
-    right: 80%;
+.two {
+    right: -40%;
 }
 
 @media only screen and (max-width: 500px) {
