@@ -24,10 +24,10 @@
         <div class="info-bg">
         <img src="image/pekka.png" class="img-bg"/></div>
         <div class="dots">
-            <i class="dot" id="1"></i>
-            <i class="dot ON" id="2"></i>
-            <i class="dot" id="3"></i>
-            <i class="dot" id="4"></i>
+            <i class="dot" id="21"></i>
+            <i class="dot ON" id="22"></i>
+            <i class="dot" id="23"></i>
+            <i class="dot" id="24"></i>
         </div>
 
         <div class="info">

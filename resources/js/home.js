@@ -1,12 +1,10 @@
 import '../css/home.css';
 
-
-const dots = document.querySelectorAll('.dot');
-
 const prev = document.querySelector('#prev');
 const next = document.querySelector('#next');
 
-let x = 2;
+let x = 12;
+let y = 22;
 
 prev.addEventListener('click', function() {
     let portrait = document.querySelectorAll('.portrait');
@@ -39,12 +37,17 @@ prev.addEventListener('click', function() {
     });
 
     x = x - 1;
-    if(x==0){
-        x = 4;
+    y = y - 1;
+    if(x==10){
+        x = 14;
+        y = 24;
     };
 
     document.getElementsByClassName('selected').remove.classList('selected');
     document.getElementById(x).toggleAttribute.classList('selected');
+
+    document.getElementsByClassName('ON').remove.classList('ON');
+    document.getElementById(x).toggleAttribute.classList('ON');
 });
 
 next.addEventListener('click', function() {
@@ -77,10 +80,23 @@ next.addEventListener('click', function() {
     });
 
     x = ++x;
-    if(x==5){
-        x = 1;
+    y = ++y;
+    if(x==15){
+        x = 11;
+        y = 21;
     };
 
-    document.getElementsByClassName('selected').remove.classList('selected');
-    document.getElementById(x).toggleAttribute.classList('selected');
+    let selected = document.querySelector('.selected');
+    selected.classList.remove("selected");
+
+    let selectedX = document.getElementById(x);
+    selectedX.classList.toggle("selected");
+    
+    let dotON = document.querySelector('.ON');
+    dotON.classList.remove("ON");
+
+    let dotY = document.getElementById(x);
+    dotY.classList.toggle("ON");
+   
+    
 });
