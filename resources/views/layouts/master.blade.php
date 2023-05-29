@@ -21,7 +21,8 @@
 
     @section('content-left')
     <div class="content-left">
-        <div class="info-bg" style="background-image: url('image/pekka.png');"></div>
+        <div class="info-bg">
+        <img src="image/pekka.png" class="img-bg"/></div>
         <div class="dots">
             <i class="dot" id="1"></i>
             <i class="dot ON" id="2"></i>
