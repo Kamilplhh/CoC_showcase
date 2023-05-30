@@ -1,4 +1,6 @@
 import '../css/home.css';
+import $ from 'jquery';
+window.$ = $;
 
 const prev = document.querySelector('#prev');
 const next = document.querySelector('#next');
@@ -33,6 +35,8 @@ next.addEventListener('click', function() {
             portrait.classList.remove("two");
             portrait.classList.toggle("back");
         }
+
+        portrait.classList.toggle("inLeft");
     });
 
     x = ++x;
@@ -47,6 +51,7 @@ next.addEventListener('click', function() {
 
     let selectedX = document.getElementById(x);
     selectedX.classList.toggle("selected");
+    selectedX.classList.toggle("inCenter");
 
     let dotON = document.querySelector('.ON');
     dotON.classList.remove("ON");
@@ -54,6 +59,10 @@ next.addEventListener('click', function() {
     let dotY = document.getElementById(y);
     dotY.classList.toggle("ON");
    
+    setTimeout(() => {
+        $('.inLeft').removeClass("inLeft");
+        $('.inCenter').removeClass("inCenter");
+     }, 300);
 });
 
 prev.addEventListener('click', function() {
@@ -83,8 +92,10 @@ prev.addEventListener('click', function() {
             portrait.classList.toggle("two");
             portrait.classList.remove("back");
         }
-    });
 
+        portrait.classList.toggle("inRight");
+    });
+    
     x = x - 1;
     y = y - 1;
     if(x==10){
@@ -97,10 +108,16 @@ prev.addEventListener('click', function() {
 
     let selectedX = document.getElementById(x);
     selectedX.classList.toggle("selected");
+    selectedX.classList.toggle("inCenter");
     
     let dotON = document.querySelector('.ON');
     dotON.classList.remove("ON");
 
     let dotY = document.getElementById(y);
     dotY.classList.toggle("ON");
+
+    setTimeout(() => {
+       $('.inRight').removeClass("inRight");
+       $('.inCenter').removeClass("inCenter");
+    }, 300);
 });

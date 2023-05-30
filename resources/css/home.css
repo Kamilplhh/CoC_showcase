@@ -1,5 +1,5 @@
 .content-right {
-    width: 50vw;
+    width: 49vw;
     float: right;
     height: 100%;
 }
@@ -78,6 +78,52 @@
     right: -40%;
 }
 
+.inRight{
+    animation: fadeRight 0.3s ease-in 0s 1 normal forwards;
+}
+
+@keyframes fadeRight {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.inLeft {
+    animation: fadeLeft 0.3s ease-in 0s 1 normal forwards;
+}
+
+@keyframes fadeLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.inCenter {
+    animation: fadeIN 0.3s ease-in 0s 1 normal forwards;
+}
+
+@keyframes fadeIN {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
 @media only screen and (max-width: 500px) {
     .buttons{
         position: absolute;
@@ -88,7 +134,7 @@
         padding: 14px 8px 14px 8px;
     }
     .content-right {
-        width: 40vw !important;
+        width: 39vw !important;
     }
     .portrait {
         height: 50%;
@@ -105,5 +151,8 @@
     }
     .portrait {
         width: 90%;
+    }
+    .button:hover {
+        transform: none;
     }
 }
