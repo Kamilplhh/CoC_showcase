@@ -156,7 +156,7 @@ body::-webkit-scrollbar {
 
 @media only screen and (max-width: 500px) {
     .content-left {
-        width: 60vw !important;
+        width: 90vw !important;
     }
     .dot {
         height: 8px;
@@ -167,6 +167,16 @@ body::-webkit-scrollbar {
         position: absolute;
         bottom: 10px !important;
     }
+    h1 {
+        font-size: 1.1rem;
+    }
+    .info {
+        width: 80vw !important;
+    }
+    .info-bg {
+        width: 80vw !important;
+        display: block !important;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -174,7 +184,7 @@ body::-webkit-scrollbar {
         font-size: 11px;
     }
     .info {
-        width: 55vw;
+        width: 50vw;
         height: 70vh;
     }
     .info-bg {

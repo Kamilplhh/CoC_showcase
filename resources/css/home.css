@@ -139,9 +139,12 @@
     .portrait {
         height: 50%;
     }
+    .carousel {
+        display: none;
+    }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     .back{
         visibility: hidden;
         position: absolute;
