@@ -39,7 +39,7 @@
                     <h1>{{ $character->name }}</h1>
                 </center>
                 <div class="dsc">
-                {{ $character->description }}
+                    {{ $character->description }}
                 </div>
             </div>
             <div class="stats row">
@@ -67,7 +67,7 @@
             </div>
         </div>
         @endforeach
-        
+
         <div class="details">
             <a href="/" class="more">MORE DETAILS</a>
         </div>

@@ -5,21 +5,11 @@
 
 @section('content')
 <div class="carousel">
-    <div class="portrait behind one" style="background-color: rgb(128, 65, 191)" id="1">
-        <img src="image/barbarian.png" class="character" />
+    @foreach ($characters as $character)
+    <div class="portrait" style="background-color: {{ $character->bg }}" id="{{ $character->id }}">
+        <img src="{{ url('image/'.$character->src) }}" class="character" />
     </div>
-
-    <div class="portrait main" style="background-color: rgb(128, 65, 191)" id="2">
-        <img src="image/pekka.png" class="character" />
-    </div>
-    
-    <div class="portrait back" style="background-color: rgb(228, 230, 115)" id="3">
-        <img src="image/barbarian.png" class="character" />
-    </div>
-
-    <div class="portrait behind two" style="background-color: rgb(228, 230, 115)" id="4">
-        <img src="image/pekka.png" class="character" />
-    </div>
+    @endforeach
 </div>
 <div class="buttons">
     <div class="button" id="prev">

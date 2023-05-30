@@ -50,12 +50,6 @@ body::-webkit-scrollbar {
     border-radius: 50%;
     margin-top: 5vh;
     transition: 0.2s linear;
-    cursor: pointer;
-}
-
-.dot:hover {
-    transform: scale(1.4);
-    background-color: white;
 }
 
 .ON {

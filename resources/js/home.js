@@ -6,7 +6,7 @@ const next = document.querySelector('#next');
 let x = 12;
 let y = 22;
 
-prev.addEventListener('click', function() {
+next.addEventListener('click', function() {
     let portrait = document.querySelectorAll('.portrait');
     portrait.forEach(portrait => {
         portrait.id = portrait.id - 1;
@@ -35,13 +35,12 @@ prev.addEventListener('click', function() {
         }
     });
 
-    x = x - 1;
-    y = y - 1;
-    if(x==10){
-        x = 14;
-        y = 24;
+    x = ++x;
+    y = ++y;
+    if(x==15){
+        x = 11;
+        y = 21;
     };
-
 
     let selected = document.querySelector('.selected');
     selected.classList.remove("selected");
@@ -57,7 +56,7 @@ prev.addEventListener('click', function() {
    
 });
 
-next.addEventListener('click', function() {
+prev.addEventListener('click', function() {
     let portrait = document.querySelectorAll('.portrait');
     portrait.forEach(portrait => {
         portrait.id = ++portrait.id;
@@ -86,11 +85,11 @@ next.addEventListener('click', function() {
         }
     });
 
-    x = ++x;
-    y = ++y;
-    if(x==15){
-        x = 11;
-        y = 21;
+    x = x - 1;
+    y = y - 1;
+    if(x==10){
+        x = 14;
+        y = 24;
     };
 
     let selected = document.querySelector('.selected');
