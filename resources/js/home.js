@@ -8,7 +8,6 @@ let y = 22;
 
 prev.addEventListener('click', function() {
     let portrait = document.querySelectorAll('.portrait');
-    console.log(portrait);
     portrait.forEach(portrait => {
         portrait.id = portrait.id - 1;
 
@@ -43,11 +42,12 @@ prev.addEventListener('click', function() {
         y = 24;
     };
 
-    document.getElementsByClassName('selected').remove.classList('selected');
-    document.getElementById(x).toggleAttribute.classList('selected');
 
-    document.getElementsByClassName('ON').remove.classList('ON');
-    document.getElementById(x).toggleAttribute.classList('ON');
+    let dotON = document.querySelector('.ON');
+    dotON.classList.remove("ON");
+
+    let dotY = document.getElementById(y);
+    dotY.classList.toggle("ON");
 });
 
 next.addEventListener('click', function() {
@@ -86,16 +86,16 @@ next.addEventListener('click', function() {
         y = 21;
     };
 
-    let selected = document.querySelector('.selected');
-    selected.classList.remove("selected");
+    // let selected = document.querySelector('.selected');
+    // selected.classList.remove("selected");
 
-    let selectedX = document.getElementById(x);
-    selectedX.classList.toggle("selected");
+    // let selectedX = document.getElementById(x);
+    // selectedX.classList.toggle("selected");
     
     let dotON = document.querySelector('.ON');
     dotON.classList.remove("ON");
 
-    let dotY = document.getElementById(x);
+    let dotY = document.getElementById(y);
     dotY.classList.toggle("ON");
    
     
