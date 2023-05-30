@@ -43,11 +43,11 @@ prev.addEventListener('click', function() {
     };
 
 
-    let dotON = document.querySelector('.ON');
-    dotON.classList.remove("ON");
+    let selected = document.querySelector('.selected');
+    selected.classList.remove("selected");
 
-    let dotY = document.getElementById(y);
-    dotY.classList.toggle("ON");
+    let selectedX = document.getElementById(x);
+    selectedX.classList.toggle("selected");
 });
 
 next.addEventListener('click', function() {
@@ -86,11 +86,11 @@ next.addEventListener('click', function() {
         y = 21;
     };
 
-    // let selected = document.querySelector('.selected');
-    // selected.classList.remove("selected");
+    let selected = document.querySelector('.selected');
+    selected.classList.remove("selected");
 
-    // let selectedX = document.getElementById(x);
-    // selectedX.classList.toggle("selected");
+    let selectedX = document.getElementById(x);
+    selectedX.classList.toggle("selected");
     
     let dotON = document.querySelector('.ON');
     dotON.classList.remove("ON");

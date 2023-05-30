@@ -22,8 +22,6 @@
 
     @section('content-left')
     <div class="content-left">
-        <div class="info-bg">
-        <img src="image/pekka.png" class="img-bg"/></div>
         <div class="dots">
             <i class="dot" id="21"></i>
             <i class="dot ON" id="22"></i>
@@ -31,7 +29,47 @@
             <i class="dot" id="24"></i>
         </div>
 
-        <div class="info">
+        <div class="info" id="11">
+            <div class="info-bg">
+                <img src="image/barbarian.png" class="img-bg" />
+            </div>
+            <div class="description">
+                <center>
+                    <h1>barbarian</h1>
+                </center>
+                <div class="dsc">
+                barbarian cos tam cos
+                </div>
+            </div>
+            <div class="stats row">
+                <div class="stat col-6">
+                    <i class="fa-solid fa-crosshairs"></i>
+                    Preffered Target: Walls
+                </div>
+                <div class="stat col-6">
+                    <i class="fa-solid fa-house-flood-water"></i>
+                    Housing Space: 6
+                </div>
+                <div class="stat col-6">
+                    <i class="fa-solid fa-person-running"></i>
+                    Movement speed: 15
+                </div>
+                <div class="stat col-6">
+                    <i class="fa-solid fa-dagger"></i>
+                    <img src="icons/attack.png" class="attack" />
+                    Attack Speed: 21
+                </div>
+                <div class="stat col-6">
+                    <i class="fa-solid fa-clock"></i>
+                    Training Time: 1m
+                </div>
+            </div>
+        </div>
+        
+        <div class="info selected" id="12">
+            <div class="info-bg">
+                <img src="image/pekka.png" class="img-bg" />
+            </div>
             <div class="description">
                 <center>
                     <h1>P.E.K.K.A</h1>
@@ -64,6 +102,81 @@
                 </div>
             </div>
         </div>
+
+        <div class="info" id="13">
+            <div class="info-bg">
+                <img src="image/barbarian.png" class="img-bg" />
+            </div>
+            <div class="description">
+                <center>
+                    <h1>barbarian</h1>
+                </center>
+                <div class="dsc">
+                barbarian cos tam cos
+                </div>
+            </div>
+            <div class="stats row">
+                <div class="stat col-6">
+                    <i class="fa-solid fa-crosshairs"></i>
+                    Preffered Target: Walls
+                </div>
+                <div class="stat col-6">
+                    <i class="fa-solid fa-house-flood-water"></i>
+                    Housing Space: 6
+                </div>
+                <div class="stat col-6">
+                    <i class="fa-solid fa-person-running"></i>
+                    Movement speed: 15
+                </div>
+                <div class="stat col-6">
+                    <i class="fa-solid fa-dagger"></i>
+                    <img src="icons/attack.png" class="attack" />
+                    Attack Speed: 21
+                </div>
+                <div class="stat col-6">
+                    <i class="fa-solid fa-clock"></i>
+                    Training Time: 1m
+                </div>
+            </div>
+        </div>
+
+        <div class="info" id="14">
+            <div class="info-bg">
+                <img src="image/pekka.png" class="img-bg" />
+            </div>
+            <div class="description">
+                <center>
+                    <h1>P.E.K.K.A</h1>
+                </center>
+                <div class="dsc">
+                    P.E.K.K.A is a big unit unlocked in the standard Barracks when it is upgraded to level 10 which requires Town Hall level 8. She is a slow single-target melee Elixir Troop that occupies a big amount of housing space but comes with large amounts of hitpoints and damage.
+                </div>
+            </div>
+            <div class="stats row">
+                <div class="stat col-6">
+                    <i class="fa-solid fa-crosshairs"></i>
+                    Preffered Target: Walls
+                </div>
+                <div class="stat col-6">
+                    <i class="fa-solid fa-house-flood-water"></i>
+                    Housing Space: 6
+                </div>
+                <div class="stat col-6">
+                    <i class="fa-solid fa-person-running"></i>
+                    Movement speed: 15
+                </div>
+                <div class="stat col-6">
+                    <i class="fa-solid fa-dagger"></i>
+                    <img src="icons/attack.png" class="attack" />
+                    Attack Speed: 21
+                </div>
+                <div class="stat col-6">
+                    <i class="fa-solid fa-clock"></i>
+                    Training Time: 1m
+                </div>
+            </div>
+        </div>
+
         <div class="details">
             <a href="/" class="more">MORE DETAILS</a>
         </div>
