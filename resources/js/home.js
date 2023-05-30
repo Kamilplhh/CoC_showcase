@@ -36,7 +36,7 @@ next.addEventListener('click', function() {
             portrait.classList.toggle("back");
         }
 
-        portrait.classList.toggle("inLeft");
+        portrait.classList.toggle("inRight");
     });
 
     x = ++x;
@@ -60,7 +60,7 @@ next.addEventListener('click', function() {
     dotY.classList.toggle("ON");
    
     setTimeout(() => {
-        $('.inLeft').removeClass("inLeft");
+        $('.inRight').removeClass("inRight");
         $('.inCenter').removeClass("inCenter");
      }, 300);
 });
@@ -93,7 +93,7 @@ prev.addEventListener('click', function() {
             portrait.classList.remove("back");
         }
 
-        portrait.classList.toggle("inRight");
+        portrait.classList.toggle("inLeft");
     });
     
     x = x - 1;
@@ -117,7 +117,7 @@ prev.addEventListener('click', function() {
     dotY.classList.toggle("ON");
 
     setTimeout(() => {
-       $('.inRight').removeClass("inRight");
+       $('.inLeft').removeClass("inLeft");
        $('.inCenter').removeClass("inCenter");
     }, 300);
 });
