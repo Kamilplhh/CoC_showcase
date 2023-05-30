@@ -30,9 +30,9 @@
         </div>
 
         @foreach ($characters as $character)
-        <div class="info">
+        <div class="info" id="{{ 10 + $character->id }}">
             <div class="info-bg">
-                <img src="{{ url('images/'.$character->src) }}" class="img-bg" />
+                <img src="{{ url('image/'.$character->src) }}" class="img-bg" />
             </div>
             <div class="description">
                 <center>

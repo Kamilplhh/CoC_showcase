@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('time');
             $table->integer('speed');
             $table->integer('housing');
-            $table->integer('attack');
+            $table->float('attack', 2,2);
             $table->timestamps();
         });
     }

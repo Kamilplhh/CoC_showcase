@@ -48,6 +48,13 @@ prev.addEventListener('click', function() {
 
     let selectedX = document.getElementById(x);
     selectedX.classList.toggle("selected");
+
+    let dotON = document.querySelector('.ON');
+    dotON.classList.remove("ON");
+
+    let dotY = document.getElementById(y);
+    dotY.classList.toggle("ON");
+   
 });
 
 next.addEventListener('click', function() {
@@ -97,6 +104,4 @@ next.addEventListener('click', function() {
 
     let dotY = document.getElementById(y);
     dotY.classList.toggle("ON");
-   
-    
 });
